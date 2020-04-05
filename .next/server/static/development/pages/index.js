@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -325,13 +325,18 @@ function Footer() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../redux/actions/modalActions */ "./src/redux/actions/modalActions.js");
 var _jsxFileName = "C:\\www\\habbobr-front\\src\\components\\Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
 
 
 function Header(props) {
@@ -357,7 +362,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 15,
       columnNumber: 3
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavbarBrand"], {
@@ -366,7 +371,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 16,
       columnNumber: 4
     }
   }, "habboBR", __jsx("span", {
@@ -374,7 +379,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 17,
       columnNumber: 12
     }
   }, "Beta")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavbarToggler"], {
@@ -382,7 +387,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 20,
       columnNumber: 4
     }
   }, __jsx("span", {
@@ -390,7 +395,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 20,
       columnNumber: 44
     }
   })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Collapse"], {
@@ -399,7 +404,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 22,
       columnNumber: 4
     }
   }, __jsx("ul", {
@@ -408,7 +413,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 23,
       columnNumber: 5
     }
   }, __jsx("li", {
@@ -416,7 +421,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 24,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -425,14 +430,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 25,
       columnNumber: 7
     }
   }, "In\xEDcio")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 28,
       columnNumber: 6
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["UncontrolledDropdown"], {
@@ -441,7 +446,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 29,
       columnNumber: 7
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownToggle"], {
@@ -450,7 +455,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 30,
       columnNumber: 8
     }
   }, "P\xE1ginas"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], {
@@ -458,14 +463,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 34,
       columnNumber: 8
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 35,
       columnNumber: 9
     }
   }, "Sobre"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
@@ -473,7 +478,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 36,
       columnNumber: 9
     }
   }, "Login"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
@@ -481,28 +486,28 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 37,
       columnNumber: 9
     }
   }, "Equipe"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, "Contato"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 39,
       columnNumber: 9
     }
   }, "Components")))), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 43,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -511,14 +516,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 43,
       columnNumber: 10
     }
   }, "Not\xEDcias")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 44,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -527,14 +532,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 44,
       columnNumber: 10
     }
   }, "F\xF3rum")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 45,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -543,14 +548,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 45,
       columnNumber: 10
     }
   }, "Galeria")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 46,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -559,7 +564,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 46,
       columnNumber: 10
     }
   }, "Eventos"))), __jsx("div", {
@@ -567,7 +572,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 49,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -575,7 +580,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 50,
       columnNumber: 6
     }
   }, __jsx("label", {
@@ -584,7 +589,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 51,
       columnNumber: 7
     }
   }, __jsx("i", {
@@ -592,7 +597,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 52,
       columnNumber: 8
     }
   }), __jsx("input", {
@@ -602,18 +607,16 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 53,
       columnNumber: 8
     }
   }))), __jsx("a", {
-    href: "/",
     className: "btn btn-primary",
-    "data-toggle": "modal",
-    "data-target": "#loginModal",
+    onClick: () => props.showModal(),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 57,
       columnNumber: 6
     }
   }, "Entrar"), __jsx("div", {
@@ -621,7 +624,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 59,
       columnNumber: 6
     }
   }, __jsx("label", {
@@ -629,7 +632,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 60,
       columnNumber: 7
     }
   }, __jsx("i", {
@@ -637,16 +640,15 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 60,
       columnNumber: 31
     }
   })), __jsx("form", {
-    action: "https://marcocuel.com/p/fansite/",
     method: "get",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 62,
       columnNumber: 7
     }
   }, __jsx("input", {
@@ -657,11 +659,20 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 63,
       columnNumber: 8
     }
   }))))));
 }
+
+const mapStateToProps = state => ({
+  modal: state.modal.value
+});
+
+const mapDispatchToProps = {
+  showModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_3__["showModal"]
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, mapDispatchToProps)(Header));
 
 /***/ }),
 
@@ -2110,13 +2121,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./src/components/Header.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
-/* harmony import */ var _components_Player__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Player */ "./src/components/Player.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/modalActions */ "./src/redux/actions/modalActions.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Header */ "./src/components/Header.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_Player__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Player */ "./src/components/Player.js");
 var _jsxFileName = "C:\\www\\habbobr-front\\src\\components\\Layout.js";
-
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2125,98 +2138,473 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Layout = ({
-  children,
-  title
-}) => {
-  const {
-    0: modal,
-    1: setModal
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
 
-  const toggle = () => setModal(!modal);
 
-  return __jsx("div", {
-    className: "App",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 3
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 4
-    }
-  }, __jsx("meta", {
-    charSet: "utf-8",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 5
-    }
-  }), __jsx("meta", {
-    name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 5
-    }
-  }), __jsx("title", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 5
-    }
-  }, title), __jsx("link", {
-    rel: "shortcut icon",
-    href: "favicon.ico",
-    type: "image/x-icon",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 5
-    }
-  })), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 4
-    }
-  }), __jsx("main", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 4
-    }
-  }, children), __jsx(_components_Player__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 4
-    }
-  }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 4
-    }
-  }));
+class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  static getInitialProps({
+    store
+  }) {}
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      formShowing: 'login'
+    };
+  }
+
+  toggleForm() {
+    this.setState((state, props) => ({
+      formShowing: state.formShowing == 'login' ? 'register' : 'login'
+    }));
+  }
+
+  render() {
+    const {
+      children,
+      title
+    } = this.props;
+
+    const modalCloseButton = __jsx("button", {
+      type: "button",
+      className: "close",
+      onClick: () => this.props.hideModal(),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 28
+      }
+    }, __jsx("i", {
+      className: "fas fa-times",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 107
+      }
+    }));
+
+    return __jsx("div", {
+      className: "App",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 4
+      }
+    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 5
+      }
+    }, __jsx("meta", {
+      charSet: "utf-8",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 6
+      }
+    }), __jsx("meta", {
+      name: "viewport",
+      content: "initial-scale=1.0, width=device-width",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 6
+      }
+    }), __jsx("title", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 6
+      }
+    }, title), __jsx("link", {
+      rel: "shortcut icon",
+      href: "favicon.ico",
+      type: "image/x-icon",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 6
+      }
+    })), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 5
+      }
+    }), __jsx("main", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 5
+      }
+    }, children), __jsx(_components_Player__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 5
+      }
+    }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 5
+      }
+    }), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Modal"], {
+      isOpen: this.props.modal,
+      toggle: this.props.toggleModal,
+      size: "lg",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      className: "row no-gutters",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "col-md-6",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56,
+        columnNumber: 7
+      }
+    }, __jsx("div", {
+      className: "bg-login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 8
+      }
+    }, __jsx("h3", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58,
+        columnNumber: 9
+      }
+    }, "Um lugar divertido com gente incr\xEDvel."))), __jsx("div", {
+      className: "col-md-6",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 7
+      }
+    }, __jsx("div", {
+      className: "toggle-login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63,
+        columnNumber: 8
+      }
+    }, __jsx("div", {
+      className: "login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64,
+        columnNumber: 9
+      }
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalHeader"], {
+      close: modalCloseButton,
+      tag: "h3",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65,
+        columnNumber: 10
+      }
+    }, this.state.formShowing == 'login' ? 'Entrar' : 'Criar conta'), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalBody"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72,
+        columnNumber: 10
+      }
+    }, __jsx("div", {
+      className: `${this.state.formShowing == 'register' && 'd-none'}`,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73,
+        columnNumber: 11
+      }
+    }, __jsx("form", {
+      id: "loginform",
+      method: "post",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 12
+      }
+    }, __jsx("p", {
+      className: "login-username",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      htmlFor: "user_login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 14
+      }
+    }, "Nome de usu\xE1rio ou endere\xE7o de e-mail"), __jsx("input", {
+      type: "text",
+      name: "log",
+      id: "user_login",
+      className: "input",
+      placeholder: "4Queijos",
+      size: 20,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77,
+        columnNumber: 14
+      }
+    })), __jsx("p", {
+      className: "login-password",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      htmlFor: "user_pass",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81,
+        columnNumber: 14
+      }
+    }, "Senha"), __jsx("input", {
+      type: "password",
+      name: "pwd",
+      id: "user_pass",
+      className: "input",
+      placeholder: "Sua senha",
+      size: 20,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82,
+        columnNumber: 14
+      }
+    })), __jsx("p", {
+      className: "login-remember",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86,
+        columnNumber: 14
+      }
+    }, __jsx("input", {
+      name: "rememberme",
+      type: "checkbox",
+      id: "rememberme",
+      value: "forever",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87,
+        columnNumber: 15
+      }
+    }), "\xA0Lembrar-me")), __jsx("p", {
+      className: "login-submit",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92,
+        columnNumber: 13
+      }
+    }, __jsx("input", {
+      type: "submit",
+      className: "button button-primary",
+      value: "Acessar",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93,
+        columnNumber: 14
+      }
+    }))), __jsx("hr", {
+      className: "ou my-4",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97,
+        columnNumber: 12
+      }
+    }), __jsx("div", {
+      className: "text-center",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 99,
+        columnNumber: 12
+      }
+    }, __jsx("a", {
+      onClick: () => this.toggleForm(),
+      className: "btn btn-lg btn-success show-register",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100,
+        columnNumber: 13
+      }
+    }, "Criar nova conta"))), __jsx("div", {
+      className: `${this.state.formShowing == 'login' && 'd-none'}`,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 11
+      }
+    }, __jsx("form", {
+      method: "post",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105,
+        columnNumber: 12
+      }
+    }, __jsx("div", {
+      className: "form-group",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107,
+        columnNumber: 14
+      }
+    }, "Usu\xE1rio"), __jsx("input", {
+      type: "text",
+      name: "user_login",
+      id: "user_login",
+      className: "form-control alt",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 108,
+        columnNumber: 14
+      }
+    })), __jsx("div", {
+      className: "form-group",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 111,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 112,
+        columnNumber: 14
+      }
+    }, "E-mail"), __jsx("input", {
+      type: "text",
+      name: "user_email",
+      id: "user_email",
+      className: "form-control alt",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113,
+        columnNumber: 14
+      }
+    })), __jsx("p", {
+      className: "text-muted",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 116,
+        columnNumber: 13
+      }
+    }, "Uma confirma\xE7\xE3o de registro ser\xE1 enviada para voc\xEA por e-mail."), __jsx("input", {
+      className: "btn btn-lg btn-block btn-success",
+      type: "submit",
+      value: "Cadastre-se",
+      id: "register",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 117,
+        columnNumber: 13
+      }
+    }), __jsx("div", {
+      className: "text-center text-muted mt-4",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119,
+        columnNumber: 13
+      }
+    }, "J\xE1 tem uma conta? \xA0", __jsx("a", {
+      onClick: () => this.toggleForm(),
+      className: "text-link text-primary show-login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121,
+        columnNumber: 20
+      }
+    }, "Entre agora")))))))))));
+  }
+
+}
+
+const mapStateToProps = state => ({
+  modal: state.modal.value
+});
+
+const mapDispatchToProps = {
+  showModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__["showModal"],
+  hideModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__["hideModal"],
+  toggleModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__["toggleModal"]
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, mapDispatchToProps)(Layout));
 
 /***/ }),
 
@@ -2343,13 +2731,14 @@ function Player() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
-/* harmony import */ var _components_Home_Sidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Home/Sidebar */ "./src/components/Home/Sidebar.js");
-/* harmony import */ var _components_Home_News__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Home/News */ "./src/components/Home/News.js");
-/* harmony import */ var _components_Home_Forum__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Home/Forum */ "./src/components/Home/Forum.js");
-/* harmony import */ var _components_Home_Badge__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Home/Badge */ "./src/components/Home/Badge.js");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _components_Home_Sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Home/Sidebar */ "./src/components/Home/Sidebar.js");
+/* harmony import */ var _components_Home_News__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Home/News */ "./src/components/Home/News.js");
+/* harmony import */ var _components_Home_Forum__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Home/Forum */ "./src/components/Home/Forum.js");
+/* harmony import */ var _components_Home_Badge__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Home/Badge */ "./src/components/Home/Badge.js");
 var _jsxFileName = "C:\\www\\habbobr-front\\src\\pages\\index.js";
-
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2357,760 +2746,792 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-function Index() {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "P\xE1gina Inicial",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 3
-    }
-  }, __jsx("div", {
-    className: "jumbotron jumbotron-fluid hero",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 4
-    }
-  }, __jsx("div", {
-    className: "container",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 5
-    }
-  }, __jsx("h1", {
-    className: "my-3",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 6
-    }
-  }, "\xC9 novo por aqui? Crie uma conta!"))), __jsx("section", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 4
-    }
-  }, __jsx("div", {
-    className: "container",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: "row",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 6
-    }
-  }, __jsx(_components_Home_Sidebar__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
-    }
-  }), __jsx(_components_Home_News__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
-    }
-  })))), __jsx("section", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 4
-    }
-  }, __jsx("div", {
-    className: "container",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: "row",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 6
-    }
-  }, __jsx("div", {
-    className: "col-lg-9 pr-lg-3",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 6
-    }
-  }, __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    id: "custom_widget_forum-2",
-    className: "widget widget_custom_widget_forum mb-4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "section-title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 9
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 10
-    }
-  }, "F\xF3rum")), __jsx("div", {
-    className: "row row-forum",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 9
-    }
-  }, __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Procuro mulheres para sexo",
-    author: "Colecction",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 10
-    }
-  }), __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Vendo pack do pezinho 50c",
-    author: ",-Isabel-,",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 10
-    }
-  }), __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Nova vers\xE3o do Habbo vazou",
-    author: "Bromarks",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 10
-    }
-  }), __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Vagas abertas",
-    author: "Janjao.ban",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 10
-    }
-  }))), __jsx("div", {
-    id: "custom_widget_coisas-2",
-    className: "widget widget_custom_widget_coisas mb-4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "section-title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 9
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 10
-    }
-  }, "Coisas gr\xE1tis")), __jsx("div", {
-    className: "row",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 9
-    }
-  }, __jsx(_components_Home_Badge__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    title: "Corinthians",
-    code: "BR100",
-    status: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 10
-    }
-  }), __jsx(_components_Home_Badge__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    title: "Ganhe um emblema muito TOP!",
-    code: "DE572",
-    status: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 10
-    }
-  }), __jsx(_components_Home_Badge__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    title: "Ganhe emblema da organiza\xE7\xE3o BobbaFace",
-    code: "PT051",
-    status: false,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 10
-    }
-  }))))), __jsx("div", {
-    className: "col-lg-3 pl-lg-3",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 6
-    }
-  }, __jsx("div", {
-    className: "sidebar",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    id: "custom_widget_evento-2",
-    className: "widget widget_custom_widget_evento mb-4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: "section-title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 8
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 8
-    }
-  }, "Eventos")), __jsx("div", {
-    className: "row row-event",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "card event now event-151",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "cover",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "date",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 10
-    }
-  }, __jsx("div", {
-    className: "month",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71,
-      columnNumber: 10
-    }
-  }, "Abr"), __jsx("div", {
-    className: "day",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 10
-    }
-  }, "03")), __jsx("img", {
-    src: "https://marcocuel.com/p/fansite/wp-content/uploads/2020/01/thumb_10.png",
-    alt: "cover",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 10
-    }
-  }), __jsx("div", {
-    className: "txt",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75,
-      columnNumber: 10
-    }
-  }, "Acontecendo"), __jsx("div", {
-    className: "title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76,
-      columnNumber: 10
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/evento/encontre-o-marco/",
-    title: "Encontre o Marco",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77,
-      columnNumber: 10
-    }
-  }, "Encontre o Marco"))))), __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "card event now event-146",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "cover",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "date",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85,
-      columnNumber: 10
-    }
-  }, __jsx("div", {
-    className: "month",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86,
-      columnNumber: 10
-    }
-  }, "Abr"), __jsx("div", {
-    className: "day",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87,
-      columnNumber: 10
-    }
-  }, "03")), __jsx("img", {
-    src: "https://marcocuel.com/p/fansite/wp-content/uploads/2020/01/thumb_8.png",
-    alt: "cover",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 10
-    }
-  }), __jsx("div", {
-    className: "txt",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90,
-      columnNumber: 10
-    }
-  }, "Acontecendo"), __jsx("div", {
-    className: "title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 10
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/evento/labirinto-2-0/",
-    title: "Labirinto 2.0",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 92,
-      columnNumber: 10
-    }
-  }, "Labirinto 2.0"))))), __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "card event now event-109",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "cover",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "date",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 10
-    }
-  }, __jsx("div", {
-    className: "month",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101,
-      columnNumber: 10
-    }
-  }, "Abr"), __jsx("div", {
-    className: "day",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102,
-      columnNumber: 10
-    }
-  }, "03")), __jsx("img", {
-    src: "https://marcocuel.com/p/fansite/wp-content/uploads/2020/01/thumb_6.png",
-    alt: "cover",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 104,
-      columnNumber: 10
-    }
-  }), __jsx("div", {
-    className: "txt",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 10
-    }
-  }, "Acontecendo"), __jsx("div", {
-    className: "title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 10
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/evento/danca-das-cadeiras/",
-    title: "Dan\xE7a das cadeiras",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 107,
-      columnNumber: 10
-    }
-  }, "Dan\xE7a das cadeiras")))))))), __jsx("div", {
-    className: "section-title mt-4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 115,
-      columnNumber: 7
-    }
-  }, __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 7
-    }
-  }, "Novos usu\xE1rios")), __jsx("div", {
-    className: "card",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 118,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: "card-body last-users",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 119,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: "row",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 121,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "avatar pixel mx-auto",
-    "data-toggle": "tooltip",
-    title: "Howper",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/perfil/Howper/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 123,
-      columnNumber: 9
-    }
-  }, __jsx("img", {
-    src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Howper&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
-    alt: "Howper",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 10
-    }
-  })))), __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "avatar pixel mx-auto",
-    "data-toggle": "tooltip",
-    title: "Disco-lee",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/perfil/Disco-lee/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130,
-      columnNumber: 9
-    }
-  }, __jsx("img", {
-    src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Disco-lee&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
-    alt: "Disco-lee",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 131,
-      columnNumber: 10
-    }
-  })))), __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "avatar pixel mx-auto",
-    "data-toggle": "tooltip",
-    title: "Bromark",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 136,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/perfil/Bromark/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137,
-      columnNumber: 9
-    }
-  }, __jsx("img", {
-    src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Bromark&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
-    alt: "Bromark",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138,
-      columnNumber: 10
-    }
-  })))), __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 142,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "avatar pixel mx-auto",
-    "data-toggle": "tooltip",
-    title: "4Queijos",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/perfil/4Queijos/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 144,
-      columnNumber: 9
-    }
-  }, __jsx("img", {
-    src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=4Queijos&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
-    alt: "4Queijos",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 10
-    }
-  })))), __jsx("div", {
-    className: "col",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 149,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    className: "avatar pixel mx-auto",
-    "data-toggle": "tooltip",
-    title: "Bromarks",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 150,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    href: "https://marcocuel.com/p/fansite/perfil/Bromarks/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 151,
-      columnNumber: 9
-    }
-  }, __jsx("img", {
-    src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Bromarks&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
-    alt: "Bromarks",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 152,
-      columnNumber: 10
-    }
-  }))))))))))));
-}
+
+
+const Index = () => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  title: "P\xE1gina Inicial",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11,
+    columnNumber: 2
+  }
+}, __jsx("div", {
+  className: "jumbotron jumbotron-fluid hero",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12,
+    columnNumber: 3
+  }
+}, __jsx("div", {
+  className: "container",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13,
+    columnNumber: 4
+  }
+}, __jsx("h1", {
+  className: "my-3",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 5
+  }
+}, "\xC9 novo por aqui? Crie uma conta!"))), __jsx("section", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20,
+    columnNumber: 3
+  }
+}, __jsx("div", {
+  className: "container",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21,
+    columnNumber: 4
+  }
+}, __jsx("div", {
+  className: "row",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22,
+    columnNumber: 5
+  }
+}, __jsx(_components_Home_Sidebar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23,
+    columnNumber: 6
+  }
+}), __jsx(_components_Home_News__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 25,
+    columnNumber: 6
+  }
+})))), __jsx("section", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30,
+    columnNumber: 3
+  }
+}, __jsx("div", {
+  className: "container",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 31,
+    columnNumber: 4
+  }
+}, __jsx("div", {
+  className: "row",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 32,
+    columnNumber: 5
+  }
+}, __jsx("div", {
+  className: "col-lg-9 pr-lg-3",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33,
+    columnNumber: 5
+  }
+}, __jsx("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34,
+    columnNumber: 6
+  }
+}, __jsx("div", {
+  id: "custom_widget_forum-2",
+  className: "widget widget_custom_widget_forum mb-4",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "section-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 36,
+    columnNumber: 8
+  }
+}, __jsx("h3", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 37,
+    columnNumber: 9
+  }
+}, "F\xF3rum")), __jsx("div", {
+  className: "row row-forum",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 40,
+    columnNumber: 8
+  }
+}, __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  title: "Procuro mulheres para sexo",
+  author: "Colecction",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 41,
+    columnNumber: 9
+  }
+}), __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  title: "Vendo pack do pezinho 50c",
+  author: ",-Isabel-,",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 42,
+    columnNumber: 9
+  }
+}), __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  title: "Nova vers\xE3o do Habbo vazou",
+  author: "Bromarks",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 43,
+    columnNumber: 9
+  }
+}), __jsx(_components_Home_Forum__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  title: "Vagas abertas",
+  author: "Janjao.ban",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 44,
+    columnNumber: 9
+  }
+}))), __jsx("div", {
+  id: "custom_widget_coisas-2",
+  className: "widget widget_custom_widget_coisas mb-4",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 48,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "section-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 49,
+    columnNumber: 8
+  }
+}, __jsx("h3", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 50,
+    columnNumber: 9
+  }
+}, "Coisas gr\xE1tis")), __jsx("div", {
+  className: "row",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 53,
+    columnNumber: 8
+  }
+}, __jsx(_components_Home_Badge__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  title: "Corinthians",
+  code: "BR100",
+  status: true,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 54,
+    columnNumber: 9
+  }
+}), __jsx(_components_Home_Badge__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  title: "Ganhe um emblema muito TOP!",
+  code: "DE572",
+  status: true,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 55,
+    columnNumber: 9
+  }
+}), __jsx(_components_Home_Badge__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  title: "Ganhe emblema da organiza\xE7\xE3o BobbaFace",
+  code: "PT051",
+  status: false,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 56,
+    columnNumber: 9
+  }
+}))))), __jsx("div", {
+  className: "col-lg-3 pl-lg-3",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 62,
+    columnNumber: 5
+  }
+}, __jsx("div", {
+  className: "sidebar",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 63,
+    columnNumber: 6
+  }
+}, __jsx("div", {
+  id: "custom_widget_evento-2",
+  className: "widget widget_custom_widget_evento mb-4",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 64,
+    columnNumber: 6
+  }
+}, __jsx("div", {
+  className: "section-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 65,
+    columnNumber: 7
+  }
+}, __jsx("h3", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 66,
+    columnNumber: 7
+  }
+}, "Eventos")), __jsx("div", {
+  className: "row row-event",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 68,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 69,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "card event now event-151",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 70,
+    columnNumber: 8
+  }
+}, __jsx("div", {
+  className: "cover",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 71,
+    columnNumber: 8
+  }
+}, __jsx("div", {
+  className: "date",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 72,
+    columnNumber: 9
+  }
+}, __jsx("div", {
+  className: "month",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 73,
+    columnNumber: 9
+  }
+}, "Abr"), __jsx("div", {
+  className: "day",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 74,
+    columnNumber: 9
+  }
+}, "03")), __jsx("img", {
+  src: "https://marcocuel.com/p/fansite/wp-content/uploads/2020/01/thumb_10.png",
+  alt: "cover",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 76,
+    columnNumber: 9
+  }
+}), __jsx("div", {
+  className: "txt",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 77,
+    columnNumber: 9
+  }
+}, "Acontecendo"), __jsx("div", {
+  className: "title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 78,
+    columnNumber: 9
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/evento/encontre-o-marco/",
+  title: "Encontre o Marco",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 79,
+    columnNumber: 9
+  }
+}, "Encontre o Marco"))))), __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 84,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "card event now event-146",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 85,
+    columnNumber: 8
+  }
+}, __jsx("div", {
+  className: "cover",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 86,
+    columnNumber: 8
+  }
+}, __jsx("div", {
+  className: "date",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 87,
+    columnNumber: 9
+  }
+}, __jsx("div", {
+  className: "month",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 88,
+    columnNumber: 9
+  }
+}, "Abr"), __jsx("div", {
+  className: "day",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 89,
+    columnNumber: 9
+  }
+}, "03")), __jsx("img", {
+  src: "https://marcocuel.com/p/fansite/wp-content/uploads/2020/01/thumb_8.png",
+  alt: "cover",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 91,
+    columnNumber: 9
+  }
+}), __jsx("div", {
+  className: "txt",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 92,
+    columnNumber: 9
+  }
+}, "Acontecendo"), __jsx("div", {
+  className: "title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 93,
+    columnNumber: 9
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/evento/labirinto-2-0/",
+  title: "Labirinto 2.0",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 94,
+    columnNumber: 9
+  }
+}, "Labirinto 2.0"))))), __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 99,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "card event now event-109",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 100,
+    columnNumber: 8
+  }
+}, __jsx("div", {
+  className: "cover",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 101,
+    columnNumber: 8
+  }
+}, __jsx("div", {
+  className: "date",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 102,
+    columnNumber: 9
+  }
+}, __jsx("div", {
+  className: "month",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 103,
+    columnNumber: 9
+  }
+}, "Abr"), __jsx("div", {
+  className: "day",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 104,
+    columnNumber: 9
+  }
+}, "03")), __jsx("img", {
+  src: "https://marcocuel.com/p/fansite/wp-content/uploads/2020/01/thumb_6.png",
+  alt: "cover",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 106,
+    columnNumber: 9
+  }
+}), __jsx("div", {
+  className: "txt",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 107,
+    columnNumber: 9
+  }
+}, "Acontecendo"), __jsx("div", {
+  className: "title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 108,
+    columnNumber: 9
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/evento/danca-das-cadeiras/",
+  title: "Dan\xE7a das cadeiras",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 109,
+    columnNumber: 9
+  }
+}, "Dan\xE7a das cadeiras")))))))), __jsx("div", {
+  className: "section-title mt-4",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 117,
+    columnNumber: 6
+  }
+}, __jsx("h3", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 118,
+    columnNumber: 6
+  }
+}, "Novos usu\xE1rios")), __jsx("div", {
+  className: "card",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 120,
+    columnNumber: 6
+  }
+}, __jsx("div", {
+  className: "card-body last-users",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 121,
+    columnNumber: 6
+  }
+}, __jsx("div", {
+  className: "row",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 122,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 123,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "avatar pixel mx-auto",
+  "data-toggle": "tooltip",
+  title: "Howper",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 124,
+    columnNumber: 8
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/perfil/Howper/",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 125,
+    columnNumber: 8
+  }
+}, __jsx("img", {
+  src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Howper&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
+  alt: "Howper",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 126,
+    columnNumber: 9
+  }
+})))), __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 130,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "avatar pixel mx-auto",
+  "data-toggle": "tooltip",
+  title: "Disco-lee",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 131,
+    columnNumber: 8
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/perfil/Disco-lee/",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 132,
+    columnNumber: 8
+  }
+}, __jsx("img", {
+  src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Disco-lee&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
+  alt: "Disco-lee",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 133,
+    columnNumber: 9
+  }
+})))), __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 137,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "avatar pixel mx-auto",
+  "data-toggle": "tooltip",
+  title: "Bromark",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 138,
+    columnNumber: 8
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/perfil/Bromark/",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 139,
+    columnNumber: 8
+  }
+}, __jsx("img", {
+  src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Bromark&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
+  alt: "Bromark",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 140,
+    columnNumber: 9
+  }
+})))), __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 144,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "avatar pixel mx-auto",
+  "data-toggle": "tooltip",
+  title: "4Queijos",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 145,
+    columnNumber: 8
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/perfil/4Queijos/",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 146,
+    columnNumber: 8
+  }
+}, __jsx("img", {
+  src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=4Queijos&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
+  alt: "4Queijos",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 147,
+    columnNumber: 9
+  }
+})))), __jsx("div", {
+  className: "col",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 151,
+    columnNumber: 7
+  }
+}, __jsx("div", {
+  className: "avatar pixel mx-auto",
+  "data-toggle": "tooltip",
+  title: "Bromarks",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 152,
+    columnNumber: 8
+  }
+}, __jsx("a", {
+  href: "https://marcocuel.com/p/fansite/perfil/Bromarks/",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 153,
+    columnNumber: 8
+  }
+}, __jsx("img", {
+  src: "https://www.habbo.com.br/habbo-imaging/avatarimage?&user=Bromarks&action=std&direction=2&head_direction=3&img_format=png&gesture=std&headonly=0&size=s",
+  alt: "Bromarks",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 154,
+    columnNumber: 9
+  }
+}))))))))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 3:
+/***/ "./src/redux/actions/modalActions.js":
+/*!*******************************************!*\
+  !*** ./src/redux/actions/modalActions.js ***!
+  \*******************************************/
+/*! exports provided: SHOW_MODAL, HIDE_MODAL, TOGGLE_MODAL, showModal, hideModal, toggleModal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SHOW_MODAL", function() { return SHOW_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HIDE_MODAL", function() { return HIDE_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TOGGLE_MODAL", function() { return TOGGLE_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "showModal", function() { return showModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hideModal", function() { return hideModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleModal", function() { return toggleModal; });
+//Action Types
+const SHOW_MODAL = "SHOW_MODAL";
+const HIDE_MODAL = "HIDE_MODAL";
+const TOGGLE_MODAL = "TOGGLE_MODAL"; //Action Creator
+
+const showModal = () => ({
+  type: SHOW_MODAL
+});
+const hideModal = () => ({
+  type: HIDE_MODAL
+});
+const toggleModal = () => ({
+  type: TOGGLE_MODAL
+});
+
+/***/ }),
+
+/***/ 4:
 /*!**********************************!*\
   !*** multi ./src/pages/index.js ***!
   \**********************************/
@@ -3141,6 +3562,17 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
 
 /***/ }),
 

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -325,13 +325,18 @@ function Footer() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../redux/actions/modalActions */ "./src/redux/actions/modalActions.js");
 var _jsxFileName = "C:\\www\\habbobr-front\\src\\components\\Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
 
 
 function Header(props) {
@@ -357,7 +362,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 15,
       columnNumber: 3
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavbarBrand"], {
@@ -366,7 +371,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 16,
       columnNumber: 4
     }
   }, "habboBR", __jsx("span", {
@@ -374,7 +379,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 17,
       columnNumber: 12
     }
   }, "Beta")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavbarToggler"], {
@@ -382,7 +387,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 20,
       columnNumber: 4
     }
   }, __jsx("span", {
@@ -390,7 +395,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 20,
       columnNumber: 44
     }
   })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Collapse"], {
@@ -399,7 +404,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 22,
       columnNumber: 4
     }
   }, __jsx("ul", {
@@ -408,7 +413,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 23,
       columnNumber: 5
     }
   }, __jsx("li", {
@@ -416,7 +421,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 24,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -425,14 +430,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 25,
       columnNumber: 7
     }
   }, "In\xEDcio")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 28,
       columnNumber: 6
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["UncontrolledDropdown"], {
@@ -441,7 +446,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 29,
       columnNumber: 7
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownToggle"], {
@@ -450,7 +455,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 30,
       columnNumber: 8
     }
   }, "P\xE1ginas"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], {
@@ -458,14 +463,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 34,
       columnNumber: 8
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 35,
       columnNumber: 9
     }
   }, "Sobre"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
@@ -473,7 +478,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 36,
       columnNumber: 9
     }
   }, "Login"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
@@ -481,28 +486,28 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 37,
       columnNumber: 9
     }
   }, "Equipe"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, "Contato"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 39,
       columnNumber: 9
     }
   }, "Components")))), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 43,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -511,14 +516,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 43,
       columnNumber: 10
     }
   }, "Not\xEDcias")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 44,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -527,14 +532,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 44,
       columnNumber: 10
     }
   }, "F\xF3rum")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 45,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -543,14 +548,14 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 45,
       columnNumber: 10
     }
   }, "Galeria")), __jsx("li", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 46,
       columnNumber: 6
     }
   }, __jsx("a", {
@@ -559,7 +564,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 46,
       columnNumber: 10
     }
   }, "Eventos"))), __jsx("div", {
@@ -567,7 +572,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 49,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -575,7 +580,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 50,
       columnNumber: 6
     }
   }, __jsx("label", {
@@ -584,7 +589,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 51,
       columnNumber: 7
     }
   }, __jsx("i", {
@@ -592,7 +597,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 52,
       columnNumber: 8
     }
   }), __jsx("input", {
@@ -602,18 +607,16 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 53,
       columnNumber: 8
     }
   }))), __jsx("a", {
-    href: "/",
     className: "btn btn-primary",
-    "data-toggle": "modal",
-    "data-target": "#loginModal",
+    onClick: () => props.showModal(),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 57,
       columnNumber: 6
     }
   }, "Entrar"), __jsx("div", {
@@ -621,7 +624,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 59,
       columnNumber: 6
     }
   }, __jsx("label", {
@@ -629,7 +632,7 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 60,
       columnNumber: 7
     }
   }, __jsx("i", {
@@ -637,16 +640,15 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 60,
       columnNumber: 31
     }
   })), __jsx("form", {
-    action: "https://marcocuel.com/p/fansite/",
     method: "get",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 62,
       columnNumber: 7
     }
   }, __jsx("input", {
@@ -657,11 +659,20 @@ function Header(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 63,
       columnNumber: 8
     }
   }))))));
 }
+
+const mapStateToProps = state => ({
+  modal: state.modal.value
+});
+
+const mapDispatchToProps = {
+  showModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_3__["showModal"]
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, mapDispatchToProps)(Header));
 
 /***/ }),
 
@@ -678,13 +689,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./src/components/Header.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
-/* harmony import */ var _components_Player__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Player */ "./src/components/Player.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/modalActions */ "./src/redux/actions/modalActions.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Header */ "./src/components/Header.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_Player__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Player */ "./src/components/Player.js");
 var _jsxFileName = "C:\\www\\habbobr-front\\src\\components\\Layout.js";
-
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -693,98 +706,473 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Layout = ({
-  children,
-  title
-}) => {
-  const {
-    0: modal,
-    1: setModal
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
 
-  const toggle = () => setModal(!modal);
 
-  return __jsx("div", {
-    className: "App",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 3
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 4
-    }
-  }, __jsx("meta", {
-    charSet: "utf-8",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 5
-    }
-  }), __jsx("meta", {
-    name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 5
-    }
-  }), __jsx("title", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 5
-    }
-  }, title), __jsx("link", {
-    rel: "shortcut icon",
-    href: "favicon.ico",
-    type: "image/x-icon",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 5
-    }
-  })), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 4
-    }
-  }), __jsx("main", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 4
-    }
-  }, children), __jsx(_components_Player__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 4
-    }
-  }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 4
-    }
-  }));
+class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  static getInitialProps({
+    store
+  }) {}
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      formShowing: 'login'
+    };
+  }
+
+  toggleForm() {
+    this.setState((state, props) => ({
+      formShowing: state.formShowing == 'login' ? 'register' : 'login'
+    }));
+  }
+
+  render() {
+    const {
+      children,
+      title
+    } = this.props;
+
+    const modalCloseButton = __jsx("button", {
+      type: "button",
+      className: "close",
+      onClick: () => this.props.hideModal(),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 28
+      }
+    }, __jsx("i", {
+      className: "fas fa-times",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 107
+      }
+    }));
+
+    return __jsx("div", {
+      className: "App",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 4
+      }
+    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 5
+      }
+    }, __jsx("meta", {
+      charSet: "utf-8",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 6
+      }
+    }), __jsx("meta", {
+      name: "viewport",
+      content: "initial-scale=1.0, width=device-width",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 6
+      }
+    }), __jsx("title", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 6
+      }
+    }, title), __jsx("link", {
+      rel: "shortcut icon",
+      href: "favicon.ico",
+      type: "image/x-icon",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 6
+      }
+    })), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 5
+      }
+    }), __jsx("main", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 5
+      }
+    }, children), __jsx(_components_Player__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 5
+      }
+    }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 5
+      }
+    }), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Modal"], {
+      isOpen: this.props.modal,
+      toggle: this.props.toggleModal,
+      size: "lg",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      className: "row no-gutters",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "col-md-6",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56,
+        columnNumber: 7
+      }
+    }, __jsx("div", {
+      className: "bg-login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 8
+      }
+    }, __jsx("h3", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58,
+        columnNumber: 9
+      }
+    }, "Um lugar divertido com gente incr\xEDvel."))), __jsx("div", {
+      className: "col-md-6",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 7
+      }
+    }, __jsx("div", {
+      className: "toggle-login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63,
+        columnNumber: 8
+      }
+    }, __jsx("div", {
+      className: "login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64,
+        columnNumber: 9
+      }
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalHeader"], {
+      close: modalCloseButton,
+      tag: "h3",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65,
+        columnNumber: 10
+      }
+    }, this.state.formShowing == 'login' ? 'Entrar' : 'Criar conta'), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalBody"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72,
+        columnNumber: 10
+      }
+    }, __jsx("div", {
+      className: `${this.state.formShowing == 'register' && 'd-none'}`,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73,
+        columnNumber: 11
+      }
+    }, __jsx("form", {
+      id: "loginform",
+      method: "post",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 12
+      }
+    }, __jsx("p", {
+      className: "login-username",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      htmlFor: "user_login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 14
+      }
+    }, "Nome de usu\xE1rio ou endere\xE7o de e-mail"), __jsx("input", {
+      type: "text",
+      name: "log",
+      id: "user_login",
+      className: "input",
+      placeholder: "4Queijos",
+      size: 20,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77,
+        columnNumber: 14
+      }
+    })), __jsx("p", {
+      className: "login-password",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      htmlFor: "user_pass",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81,
+        columnNumber: 14
+      }
+    }, "Senha"), __jsx("input", {
+      type: "password",
+      name: "pwd",
+      id: "user_pass",
+      className: "input",
+      placeholder: "Sua senha",
+      size: 20,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82,
+        columnNumber: 14
+      }
+    })), __jsx("p", {
+      className: "login-remember",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86,
+        columnNumber: 14
+      }
+    }, __jsx("input", {
+      name: "rememberme",
+      type: "checkbox",
+      id: "rememberme",
+      value: "forever",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87,
+        columnNumber: 15
+      }
+    }), "\xA0Lembrar-me")), __jsx("p", {
+      className: "login-submit",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92,
+        columnNumber: 13
+      }
+    }, __jsx("input", {
+      type: "submit",
+      className: "button button-primary",
+      value: "Acessar",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93,
+        columnNumber: 14
+      }
+    }))), __jsx("hr", {
+      className: "ou my-4",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97,
+        columnNumber: 12
+      }
+    }), __jsx("div", {
+      className: "text-center",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 99,
+        columnNumber: 12
+      }
+    }, __jsx("a", {
+      onClick: () => this.toggleForm(),
+      className: "btn btn-lg btn-success show-register",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100,
+        columnNumber: 13
+      }
+    }, "Criar nova conta"))), __jsx("div", {
+      className: `${this.state.formShowing == 'login' && 'd-none'}`,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 11
+      }
+    }, __jsx("form", {
+      method: "post",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105,
+        columnNumber: 12
+      }
+    }, __jsx("div", {
+      className: "form-group",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107,
+        columnNumber: 14
+      }
+    }, "Usu\xE1rio"), __jsx("input", {
+      type: "text",
+      name: "user_login",
+      id: "user_login",
+      className: "form-control alt",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 108,
+        columnNumber: 14
+      }
+    })), __jsx("div", {
+      className: "form-group",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 111,
+        columnNumber: 13
+      }
+    }, __jsx("label", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 112,
+        columnNumber: 14
+      }
+    }, "E-mail"), __jsx("input", {
+      type: "text",
+      name: "user_email",
+      id: "user_email",
+      className: "form-control alt",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113,
+        columnNumber: 14
+      }
+    })), __jsx("p", {
+      className: "text-muted",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 116,
+        columnNumber: 13
+      }
+    }, "Uma confirma\xE7\xE3o de registro ser\xE1 enviada para voc\xEA por e-mail."), __jsx("input", {
+      className: "btn btn-lg btn-block btn-success",
+      type: "submit",
+      value: "Cadastre-se",
+      id: "register",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 117,
+        columnNumber: 13
+      }
+    }), __jsx("div", {
+      className: "text-center text-muted mt-4",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119,
+        columnNumber: 13
+      }
+    }, "J\xE1 tem uma conta? \xA0", __jsx("a", {
+      onClick: () => this.toggleForm(),
+      className: "text-link text-primary show-login",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121,
+        columnNumber: 20
+      }
+    }, "Entre agora")))))))))));
+  }
+
+}
+
+const mapStateToProps = state => ({
+  modal: state.modal.value
+});
+
+const mapDispatchToProps = {
+  showModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__["showModal"],
+  hideModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__["hideModal"],
+  toggleModal: _redux_actions_modalActions__WEBPACK_IMPORTED_MODULE_4__["toggleModal"]
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, mapDispatchToProps)(Layout));
 
 /***/ }),
 
@@ -1217,7 +1605,39 @@ function Equipe() {
 
 /***/ }),
 
-/***/ 7:
+/***/ "./src/redux/actions/modalActions.js":
+/*!*******************************************!*\
+  !*** ./src/redux/actions/modalActions.js ***!
+  \*******************************************/
+/*! exports provided: SHOW_MODAL, HIDE_MODAL, TOGGLE_MODAL, showModal, hideModal, toggleModal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SHOW_MODAL", function() { return SHOW_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HIDE_MODAL", function() { return HIDE_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TOGGLE_MODAL", function() { return TOGGLE_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "showModal", function() { return showModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hideModal", function() { return hideModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleModal", function() { return toggleModal; });
+//Action Types
+const SHOW_MODAL = "SHOW_MODAL";
+const HIDE_MODAL = "HIDE_MODAL";
+const TOGGLE_MODAL = "TOGGLE_MODAL"; //Action Creator
+
+const showModal = () => ({
+  type: SHOW_MODAL
+});
+const hideModal = () => ({
+  type: HIDE_MODAL
+});
+const toggleModal = () => ({
+  type: TOGGLE_MODAL
+});
+
+/***/ }),
+
+/***/ 6:
 /*!***********************************!*\
   !*** multi ./src/pages/equipe.js ***!
   \***********************************/
@@ -1248,6 +1668,17 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
 
 /***/ }),
 

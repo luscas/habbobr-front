@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 const Register = () => {
 	return (
-		<Layout>
+		<Layout title="Registre-se">
 			<section>
 				<div className="container pt-3">
 					<div className="row">

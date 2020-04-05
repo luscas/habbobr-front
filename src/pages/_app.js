@@ -1,22 +1,34 @@
 // import App from 'next/app'
+import React, { Component } from 'react';
+import {Provider} from 'react-redux';
+import withRedux from "next-redux-wrapper";
+
+import store from '../redux/store';
 
 import '../assets/css/bootstrap.min.css';
 import '../assets/css/style.css';
 
-function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />
-  }
+class MyApp extends Component {
+	static async getInitialProps({Component, ctx}) {
+        const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
+
+        //Anything returned here can be access by the client
+        return {pageProps: pageProps};
+    }
+
+	render() {
+		const {Component, pageProps, store} = this.props;
+
+		return (
+			<Provider store={store}>
+				<Component {...pageProps} />
+			</Provider>
+		)
+	}
+}
   
-  // Only uncomment this method if you have blocking data requirements for
-  // every single page in your application. This disables the ability to
-  // perform automatic static optimization, causing every page in your app to
-  // be server-side rendered.
-  //
-  // MyApp.getInitialProps = async (appContext) => {
-  //   // calls page's `getInitialProps` and fills `appProps.pageProps`
-  //   const appProps = await App.getInitialProps(appContext);
-  //
-  //   return { ...appProps }
-  // }
-  
-  export default MyApp
+//makeStore function that returns a new store for every request
+const makeStore = () => store;
+
+//withRedux wrapper that passes the store to the App Component
+export default withRedux(makeStore)(MyApp);

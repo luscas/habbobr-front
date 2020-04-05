@@ -24,6 +24,10 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
+    "/counter": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/equipe": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -32,15 +36,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/login": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/register": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

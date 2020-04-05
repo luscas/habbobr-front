@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-export default function Header(props) {
+import {connect} from 'react-redux';
+import { showModal } from '../redux/actions/modalActions';
+
+function Header(props) {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const toggle = () => setDropdownOpen(prevState => !prevState);
 
@@ -51,12 +54,12 @@ export default function Header(props) {
 						</label>
 					</div>
 
-					<a href={"/"} className="btn btn-primary" data-toggle="modal" data-target="#loginModal">Entrar</a>
+					<a className="btn btn-primary" onClick={() => props.showModal()}>Entrar</a>
 
 					<div className="search">
 						<label htmlFor="search"><i className="fas fa-search"></i></label>
 
-						<form action="https://marcocuel.com/p/fansite/" method="get">
+						<form method="get">
 							<input type="text" name="s" id="search" placeholder="Buscar..." />
 						</form>
 					</div>
@@ -65,3 +68,13 @@ export default function Header(props) {
 		</Navbar>
 	);
 }
+
+const mapStateToProps = state => ({
+    modal: state.modal.value
+});
+
+const mapDispatchToProps = {
+    showModal: showModal
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

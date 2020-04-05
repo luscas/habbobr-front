@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 const Login = () => {
 	return (
-		<Layout>
+		<Layout title="Login">
 			<section>
 				<div className="container pt-3">
 					<div className="row">
