@@ -20,7 +20,7 @@
     "redux": "^4.0.5",
     "selectize": "^0.12.6",
     "slugify": "^1.4.0",
-    "swiper": "^5.3.6"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "dev": "next",
